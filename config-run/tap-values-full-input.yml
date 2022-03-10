@@ -8,6 +8,10 @@ tap:
   domains:
     learningCenter: learningcenter.tap.tanzu4u.net
     knative: apps.tap.tanzu4u.net
+    appliveview:
+      host: appliveview.tap.tanzu4u.net
+      port: 443
+
 
 domain: tap.tanzu4u.net
 tls:

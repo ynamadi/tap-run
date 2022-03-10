@@ -101,6 +101,9 @@ appliveview:
   tls:
     namespace: tanzu-system-ingress
     secretName: tls
+  backend:
+    host: #@ data.values.tap.domains.appliveview.host
+    port: #@ data.values.tap.domains.appliveview.port
 #@ end
 ---
 apiVersion: v1
