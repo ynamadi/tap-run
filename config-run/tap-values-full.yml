@@ -104,6 +104,7 @@ appliveview:
   backend:
     host: #@ data.values.tap.domains.appliveview.host
     port: #@ data.values.tap.domains.appliveview.port
+    sslDisabled: true
 #@ end
 ---
 apiVersion: v1
