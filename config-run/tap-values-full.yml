@@ -95,11 +95,10 @@ cnrs:
   default_tls_secret: tanzu-system-ingress/tls
   domain_template: "{{.Name}}-{{.Namespace}}.{{.Domain}}"
 
-appliveview:
-  backend:
-    host: #@ data.values.tap.domains.appliveview.host
+backend:
+  host: #@ data.values.tap.domains.appliveview.host
 #!    port: #@ data.values.tap.domains.appliveview.port
-    sslDisabled: "false"
+  sslDisabled: "false"
 #@ end
 ---
 apiVersion: v1
