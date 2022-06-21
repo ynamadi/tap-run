@@ -7,7 +7,7 @@ profile: run
 ceip_policy_disclosed: true
 
 shared:
-  ingress_domain: y-compiles.com
+  ingress_domain: #@ data.values.tap.domains.main
 supply_chain: basic
 
 metadata_store:
