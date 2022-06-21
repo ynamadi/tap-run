@@ -4,25 +4,23 @@
 ---
 #@ def config():
 profile: run
-ceip_policy_disclosed: true
+ceip_policy_disclosed: true # Installation fails if this is not set to true. Not a string.
 
 shared:
   ingress_domain: #@ data.values.tap.domains.main
-supply_chain: basic
 
-metadata_store:
-  app_service_type: LoadBalancer
+supply_chain: basic
 
 contour:
   envoy:
     service:
-      type: LoadBalancer
+      type: LoadBalancer #NodePort can be used if your Kubernetes cluster doesn't support LoadBalancing
 
 appliveview_connector:
   backend:
-    host: #@ data.values.tap.domains.appliveview.host
-#!    port: #@ data.values.tap.domains.appliveview.port
-    sslDisabled: "false"
+    sslDisabled: true
+    host: #@ data.values.tap.domains.appliveView
+
 #@ end
 ---
 apiVersion: v1
