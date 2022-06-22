@@ -4,7 +4,7 @@
 ---
 #@ def config():
 profile: run
-ceip_policy_disclosed: true # Installation fails if this is not set to true. Not a string.
+ceip_policy_disclosed: true
 
 shared:
   ingress_domain: #@ data.values.tap.domains.main
@@ -14,7 +14,7 @@ supply_chain: basic
 contour:
   envoy:
     service:
-      type: LoadBalancer #NodePort can be used if your Kubernetes cluster doesn't support LoadBalancing
+      type: LoadBalancer
 
 appliveview_connector:
   backend:
