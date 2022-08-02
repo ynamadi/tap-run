@@ -8,3 +8,4 @@ gitops/tap-install-secrets.yml.tpl
 /cluster-essentials.sh
 /eks-cluster-setup.sh
 /tanzu-cluster-essentials/
+/aks-cluster-setup.sh
