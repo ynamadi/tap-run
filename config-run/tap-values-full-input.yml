@@ -9,8 +9,8 @@ tap:
     learningCenter: learningcenter.tanzu.y-compiles.com
     knative: apps.tanzu.y-compiles.com
     appliveview:
-          host: appliveview.tanzu.y-compiles.com
-          port: 443
+      host: appliveview.tanzu.y-compiles.com
+      port: 443
 
 domain: tanzu.y-compiles.com
 tls:
