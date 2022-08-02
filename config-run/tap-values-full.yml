@@ -36,8 +36,7 @@ contour:
 
 appliveview_connector:
   backend:
-    sslDisabled: true
-    host: #@ data.values.tap.domains.appliveView
+    sslDisabled: "true"
 
 #@ end
 ---
