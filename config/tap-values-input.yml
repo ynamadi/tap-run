@@ -5,14 +5,9 @@
 tap:
   version: "1.2.0"
   namespace: tap-install
-  catalogs: []
 
   registry:
     host: tapbuild.azurecr.io
     repositories:
       buildService: tap/build-service
       ootbSupplyChain: tap/supply-chain
-
-  domains:
-    main: tanzu.y-compiles.com
-    tapGui: tap-gui.tanzu.y-compiles.com
