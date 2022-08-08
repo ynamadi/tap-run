@@ -29,8 +29,8 @@ metadata:
     tekton.dev/git-0: https://github.com
 type: kubernetes.io/basic-auth
 stringData:
-  username: #@ data.values.tap.credentials.github.username
-  password: #@ data.values.tap.credentials.github.token
+  username: #@ data.values.tap.github.username
+  password: #@ data.values.tap.github.token
 
 ---
 apiVersion: v1
