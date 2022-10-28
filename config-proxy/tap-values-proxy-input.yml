@@ -6,7 +6,7 @@ tap:
   devNamespace: tap-dev
 
   domains:
-    knative: apps.tanzu.y-compiles.com
+    knative: apps.staging.tap.tanzu.y-compiles.com
 
 domain: y-compiles.com
 tls:

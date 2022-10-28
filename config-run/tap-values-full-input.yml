@@ -6,12 +6,12 @@ tap:
   devNamespace: tap-dev
 
   domains:
-    knative: apps.tanzu.y-compiles.com
+    knative: apps.staging.tap.tanzu.y-compiles.com
     appliveview:
-      host: appliveview.tanzu.y-compiles.com
+      host: appliveview.staging.tap.tanzu.y-compiles.com
       port: 443
 
-domain: tanzu.y-compiles.com
+domain: staging.tap.tanzu.y-compiles.com
 tls:
   secretName: tls
   namespace: tanzu-system-ingress

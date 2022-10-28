@@ -1,4 +1,19 @@
 #@ load("@ytt:data", "data")
+#@ load("@ytt:yaml", "yaml")
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: y-compiles.com
+  namespace: tanzu-system-ingress
+spec:
+  commonName: '*.staging.tap.tanzu.y-compiles.com'
+  secretName: tls
+  issuerRef:
+    name: letsencrypt-http01-issuer
+    kind: ClusterIssuer
+  dnsNames:
+  - '*.staging.tap.tanzu.y-compiles.com'
 ---
 apiVersion: v1
 data: #@ data.values.tap.credentials.certificate
