@@ -13,6 +13,13 @@ contour:
 
 supply_chain: basic
 
+ootb_supply_chain_basic:
+  registry:
+    server: #@ data.values.tap.registry.host
+    repository: #@ data.values.tap.registry.repositories.ootbSupplyChain
+  gitops:
+    ssh_secret: git-ssh
+
 cnrs:
   domain_name: #@ data.values.tap.domains.knative
   default_tls_secret: tanzu-system-ingress/tls
