@@ -22,6 +22,9 @@ appliveview_connector:
   backend:
     sslDisabled: "true"
     host: #@ data.values.tap.domains.appliveview
+
+excluded_packages:
+- policy.apps.tanzu.vmware.com
 #@ end
 ---
 apiVersion: v1
