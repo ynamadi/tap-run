@@ -23,6 +23,37 @@ appliveview_connector:
     sslDisabled: false
     host: #@ data.values.tap.domains.appliveview
     ingressEnabled: true
+    caCertData: |-
+                -----BEGIN CERTIFICATE-----
+                MIIFOjCCBCKgAwIBAgISBOnR4rWGaHL1tED3hUQx0yO4MA0GCSqGSIb3DQEBCwUA
+                MDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQD
+                EwJSMzAeFw0yMjEwMzExMTA3MzZaFw0yMzAxMjkxMTA3MzVaMCUxIzAhBgNVBAMM
+                GioudGFwLnRhbnp1LnktY29tcGlsZXMuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOC
+                AQ8AMIIBCgKCAQEA3PUYT9ibqhME0xSapZ70YxtgHq1z4PKb7e0X7mhwd2tXU2bo
+                fOfzMTw9CNik5r7ur7VWgsraC2YksDkzfuX4pBdhVhi+3yVijGo2qSOUFTBUYhaZ
+                0Q18a6GevZ5EmDhSHaySGjD4CSf97X2oUXLWdtCfCSyU5xmVyznZ/D3En+tmThir
+                /koNXckuOQkO6hm7eNTn5yuA5H7zNH17fgvmUzdLfP2QJfOlJVHbGjc04d/B+0Yp
+                eYp7NtauPAJaQETAq7T3pvWIo/y5NM7oUGLse6JjIkMeukxzLVh6qLlMuk4DGEB4
+                bRU3Tna4FmZQgl5iY/TFSvZVU163k5nRv3jTpwIDAQABo4ICVTCCAlEwDgYDVR0P
+                AQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMB
+                Af8EAjAAMB0GA1UdDgQWBBR871hVTu6cIcXV5SEpFE+wHKwcyjAfBgNVHSMEGDAW
+                gBQULrMXt1hWy65QCUDmH6+dixTCxjBVBggrBgEFBQcBAQRJMEcwIQYIKwYBBQUH
+                MAGGFWh0dHA6Ly9yMy5vLmxlbmNyLm9yZzAiBggrBgEFBQcwAoYWaHR0cDovL3Iz
+                LmkubGVuY3Iub3JnLzAlBgNVHREEHjAcghoqLnRhcC50YW56dS55LWNvbXBpbGVz
+                LmNvbTBMBgNVHSAERTBDMAgGBmeBDAECATA3BgsrBgEEAYLfEwEBATAoMCYGCCsG
+                AQUFBwIBFhpodHRwOi8vY3BzLmxldHNlbmNyeXB0Lm9yZzCCAQQGCisGAQQB1nkC
+                BAIEgfUEgfIA8AB2ALc++yTfnE26dfI5xbpY9Gxd/ELPep81xJ4dCYEl7bSZAAAB
+                hC3wpL0AAAQDAEcwRQIgSvbiwo40p9UcQlSxzfL0czN/PIf5Ma+9xuGTa+xgSwMC
+                IQCphMKdTaKmPNOZxv6/nj4zeB5pip3zskAyNOSL2aLR5QB2AHoyjFTYty22IOo4
+                4FIe6YQWcDIThU070ivBOlejUutSAAABhC3wpsgAAAQDAEcwRQIgSuaP6bDV+9xg
+                hxRHP5Kb4hBdQQYsDXUGMeI5O8Tdx04CIQDLo4jrvMbyZPVb+6NxGI7lNZ9ikahj
+                qZMepWSdr0HflTANBgkqhkiG9w0BAQsFAAOCAQEAqrlffycGFDVR29OraLRw6lt/
+                xyMPT+IHIRnK9LXk+OFM2SEKptFMAtrkdzlwBt5STw5369weU6R7tv/vatLNggjY
+                7TTzIgGL5cW7/cypbN0Bqp3mcNn4TQWdU9mWUGsNeuWluU3xTiPNrCn1rwzbagtT
+                f4YQozcxhG2/dJ7WFFPGE8giga/9pG3arwPcMmUYI/LYRGIZt9P6rwzIrKzAPsin
+                fhBg2pQ8pdoNsYqK1/6XkaJDXfN3+eJvBW2qYco6wak9CfEzIlLlhrQSz1QKXpK8
+                XJfnp57O0hqAK/OxOQTa/PgWtZKCeIGFlDxnI+eemnhQttPS+nOB1vAZCL1B8w==
+                -----END CERTIFICATE-----
 
 excluded_packages:
 - policy.apps.tanzu.vmware.com
