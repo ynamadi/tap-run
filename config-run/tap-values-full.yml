@@ -20,7 +20,7 @@ cnrs:
 
 appliveview_connector:
   backend:
-    sslDisabled: true
+    sslDisabled: false
     host: #@ data.values.tap.domains.appliveview
     ingressEnabled: true
 

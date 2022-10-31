@@ -8,7 +8,7 @@ tap:
   domains:
     knative: apps.staging.tap.tanzu.y-compiles.com
     appliveview:
-      host: appliveview.staging.tap.tanzu.y-compiles.com
+      host: appliveview.tap.tanzu.y-compiles.com
       port: 443
 
 domain: staging.tap.tanzu.y-compiles.com
