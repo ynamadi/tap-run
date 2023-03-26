@@ -9,3 +9,5 @@ gitops/tap-install-secrets.yml.tpl
 /eks-cluster-setup.sh
 /tanzu-cluster-essentials/
 /aks-cluster-setup.sh
+/azure-dns-setup.sh
+/create-deliverable.sh

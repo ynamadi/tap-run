@@ -1,0 +1,16 @@
+#@ load("@ytt:data", "data")
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: y-compiles.com
+  namespace: tanzu-system-ingress
+spec:
+  secretName: tls
+  privateKey:
+      rotationPolicy: Always
+  dnsNames:
+    - '*.apps.staging.tap.tanzu.y-compiles.com'
+  issuerRef:
+    name: letsencrypt-production
+    kind: ClusterIssuer
