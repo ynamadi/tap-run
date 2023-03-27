@@ -31,7 +31,7 @@ api_auto_registration:
 
 appliveview_connector:
   backend:
-    host: #@ data.values.tap.domains.appliveview
+    host: #@ data.values.tap.domains.appliveview.host
     ingressEnabled: true
 
 #@ end
