@@ -10,6 +10,7 @@ spec:
   privateKey:
       rotationPolicy: Always
   dnsNames:
+    - 'appliveview.tap.tanzu.y-compiles.com'
     - '*.apps.staging.tap.tanzu.y-compiles.com'
   issuerRef:
     name: letsencrypt-production
