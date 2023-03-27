@@ -31,10 +31,8 @@ api_auto_registration:
 
 appliveview_connector:
   backend:
-    sslDeactivated: false
     host: #@ data.values.tap.domains.appliveview
     ingressEnabled: true
-    ca_cert_data:  #@ data.values.tap.credentials.ca_cert
 
 #@ end
 ---
